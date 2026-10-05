@@ -30,7 +30,7 @@
                         sageLight: '#E3E7DC',
                         earthMuted: '#8A8578',
                         textPrimary: '#1A1A18',
-                        textMuted: '#52504A',
+                        textMuted: '#4A4843',
                         accentWarm: '#C86D51'
                     },
                     fontFamily: {
@@ -58,6 +58,7 @@
             color: #1A1A18;
             font-family: 'Plus Jakarta Sans', sans-serif;
             -webkit-tap-highlight-color: transparent;
+            font-size: 16px;
         }
 
         .bg-organic-patterns {
@@ -67,7 +68,7 @@
         }
 
         .modal-overlay {
-            background: rgba(28, 28, 30, 0.5);
+            background: rgba(28, 28, 30, 0.55);
             backdrop-filter: blur(8px);
             -webkit-backdrop-filter: blur(8px);
         }
@@ -87,20 +88,20 @@
 <body class="min-h-screen pb-16 antialiased bg-organic-patterns">
 
     <!-- Top Minimalist Navigation Bar -->
-    <header class="sticky top-0 z-30 bg-creamSurface/95 backdrop-blur-md border-b border-gray-200/60 px-4 py-4 transition-all">
+    <header class="sticky top-0 z-30 bg-creamSurface/95 backdrop-blur-md border-b border-gray-200/70 px-5 py-4 transition-all">
         <div class="max-w-md mx-auto flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <div class="w-11 h-11 rounded-full bg-sageGreen text-creamSurface flex items-center justify-center font-serif text-xl font-bold shadow-sm">
+            <div class="flex items-center space-x-3.5">
+                <div class="w-12 h-12 rounded-full bg-sageGreen text-creamSurface flex items-center justify-center font-serif text-2xl font-bold shadow-sm shrink-0">
                     M
                 </div>
                 <div>
-                    <h1 class="text-base font-bold text-textPrimary font-serif leading-tight">Dr. Marco Elizarrarás</h1>
-                    <p class="text-xs text-sageGreen font-semibold flex items-center gap-1 mt-0.5">
-                        <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Consultorio 2 • Mazunte
+                    <h1 class="text-lg font-bold text-textPrimary font-serif leading-tight">Dr. Marco Elizarrarás</h1>
+                    <p class="text-sm text-sageGreen font-semibold flex items-center gap-1 mt-0.5">
+                        <i data-lucide="map-pin" class="w-4 h-4"></i> Consultorio 2 • Mazunte
                     </p>
                 </div>
             </div>
-            <a href="https://wa.me/522221136211" target="_blank" class="px-4 py-2.5 bg-darkAccent hover:bg-darkAccentHover text-creamSurface text-sm font-semibold rounded-full shadow-sm transition-all flex items-center gap-1.5">
+            <a href="https://wa.me/522221136211" target="_blank" class="px-4.5 py-2.5 bg-darkAccent hover:bg-darkAccentHover text-creamSurface text-sm font-semibold rounded-full shadow-sm transition-all flex items-center gap-1.5 shrink-0">
                 <i data-lucide="phone" class="w-4 h-4"></i>
                 <span>Contacto</span>
             </a>
@@ -108,16 +109,16 @@
     </header>
 
     <!-- Main App Container -->
-    <main class="max-w-md mx-auto px-4 pt-6 space-y-7">
+    <main class="max-w-md mx-auto px-5 pt-7 space-y-8">
 
         <!-- Hero Proposal Card -->
-        <section class="p-6 rounded-4xl bg-creamSurface shadow-soft-editorial border border-white/80 relative overflow-hidden space-y-5">
-            <div class="space-y-3">
-                <div class="flex items-center justify-between flex-wrap gap-2">
-                    <span class="px-3.5 py-1 bg-sageLight text-sageGreen text-xs font-bold uppercase tracking-wider rounded-full border border-sageGreen/20">
+        <section class="p-7 sm:p-8 rounded-4xl bg-creamSurface shadow-soft-editorial border border-white/90 relative overflow-hidden space-y-6">
+            <div class="space-y-4">
+                <div class="flex items-center justify-between flex-wrap gap-2.5">
+                    <span class="px-4 py-1.5 bg-sageLight text-sageGreen text-xs sm:text-sm font-bold uppercase tracking-wider rounded-full border border-sageGreen/25">
                         Estrategia Integral 360°
                     </span>
-                    <span class="text-xs text-textMuted flex items-center gap-1 font-semibold">
+                    <span class="text-xs sm:text-sm text-textMuted flex items-center gap-1 font-semibold">
                         <i data-lucide="check-circle" class="w-4 h-4 text-sageGreen"></i> Sin Cita Previa
                     </span>
                 </div>
@@ -126,46 +127,46 @@
                     Propuesta Digital & BTL <span class="italic text-sageGreen">para Mazunte</span>
                 </h2>
                 
-                <p class="text-sm text-textMuted leading-relaxed">
+                <p class="text-base text-textMuted leading-relaxed">
                     Plan estratégico que combina <strong class="text-textPrimary font-semibold">8 Reels de alto impacto</strong> y <strong class="text-textPrimary font-semibold">activaciones territoriales (BTL)</strong> para conectar con la comunidad e impulsar el <strong class="text-textPrimary font-semibold">Consultorio 2 (Junto a la Agencia de Policía)</strong>.
                 </p>
             </div>
 
             <!-- Strategic Transition Banner -->
-            <div class="p-4 bg-sageLight/60 rounded-2xl border border-sageGreen/20 space-y-2">
-                <div class="flex items-center gap-2 text-sageGreen font-serif font-semibold text-sm">
-                    <i data-lucide="sparkles" class="w-4 h-4 shrink-0"></i>
+            <div class="p-5 bg-sageLight/70 rounded-2xl border border-sageGreen/25 space-y-2.5">
+                <div class="flex items-center gap-2 text-sageGreen font-serif font-semibold text-base">
+                    <i data-lucide="sparkles" class="w-5 h-5 shrink-0"></i>
                     <span>Renovación & Compromiso Local</span>
                 </div>
-                <p class="text-xs text-textMuted leading-relaxed">
+                <p class="text-sm text-textMuted leading-relaxed">
                     Es fundamental evidenciar el interés genuino por beneficiar a la comunidad, posicionando a este <strong class="text-textPrimary font-semibold">nuevo equipo médico profesional</strong> que asume el consultorio con una propuesta cálida, tecnológica y humana, diferenciándose por completo de gestiones anteriores.
                 </p>
             </div>
 
             <!-- Essential Info Grid -->
-            <div class="pt-3 border-t border-gray-200/80 grid grid-cols-2 gap-3 text-xs">
+            <div class="pt-4 border-t border-gray-200/90 grid grid-cols-2 gap-4 text-xs sm:text-sm">
                 <div class="space-y-1">
                     <span class="block text-xs uppercase tracking-wider text-earthMuted font-bold">Ubicación Clave</span>
-                    <p class="font-semibold text-textPrimary text-xs leading-snug">Mazunte, Oax. (Junto a la Agencia de Policía)</p>
+                    <p class="font-semibold text-textPrimary text-sm leading-snug">Mazunte, Oax. (Junto a la Agencia de Policía)</p>
                 </div>
                 <div class="space-y-1 text-right">
                     <span class="block text-xs uppercase tracking-wider text-earthMuted font-bold">Informes Directos</span>
-                    <a href="tel:2221136211" class="font-bold text-darkAccent text-xs block hover:underline">222 113 6211</a>
-                    <span class="text-xs text-textMuted block">958 584 0888</span>
+                    <a href="tel:2221136211" class="font-bold text-darkAccent text-sm block hover:underline">222 113 6211</a>
+                    <span class="text-xs text-textMuted block font-medium">958 584 0888</span>
                 </div>
             </div>
         </section>
 
         <!-- Audience Segment Tabs -->
-        <section class="space-y-3">
-            <div class="flex items-center justify-between">
-                <h3 class="text-xs font-bold uppercase tracking-widest text-earthMuted flex items-center gap-1.5">
+        <section class="space-y-4">
+            <div class="flex items-center justify-between px-1">
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-widest text-earthMuted flex items-center gap-1.5">
                     <i data-lucide="sliders" class="w-4 h-4 text-sageGreen"></i> Audiencia Objetivo
                 </h3>
-                <span class="text-xs text-sageGreen font-semibold italic">Filtra la propuesta</span>
+                <span class="text-xs sm:text-sm text-sageGreen font-semibold italic">Filtra la propuesta</span>
             </div>
 
-            <div class="grid grid-cols-4 gap-1.5 p-1.5 bg-cardBg/80 rounded-full border border-gray-300/50 text-xs font-semibold">
+            <div class="grid grid-cols-4 gap-1.5 p-2 bg-cardBg/80 rounded-full border border-gray-300/50 text-xs sm:text-sm font-semibold">
                 <button onclick="filterReels('all')" id="btn-all" class="tab-btn py-2.5 px-1 rounded-full text-center bg-darkAccent text-creamSurface shadow-sm transition-all">
                     Todos
                 </button>
@@ -182,140 +183,140 @@
         </section>
 
         <!-- Reels Catalog Section -->
-        <section class="space-y-4">
+        <section class="space-y-4.5">
             <div class="flex items-baseline justify-between px-1">
-                <h3 class="text-lg font-serif font-semibold text-textPrimary">
+                <h3 class="text-xl font-serif font-semibold text-textPrimary">
                     Estrategia Audiovisual (8 Reels)
                 </h3>
-                <span class="text-xs text-textMuted font-medium">Toca para abrir guión</span>
+                <span class="text-xs sm:text-sm text-textMuted font-medium">Toca para ver guión</span>
             </div>
 
-            <div class="space-y-4" id="reels-list">
+            <div class="space-y-4.5" id="reels-list">
 
                 <!-- REEL 1 (Star Material - Local) -->
                 <div class="reel-card local" data-category="local">
-                    <div onclick="openOverlay(1)" class="p-5 bg-creamSurface hover:bg-white rounded-3xl border border-gray-200/80 shadow-soft-editorial hover:shadow-card-hover transition-all cursor-pointer group relative overflow-hidden">
+                    <div onclick="openOverlay(1)" class="p-6 sm:p-7 bg-creamSurface hover:bg-white rounded-3xl border border-gray-200/80 shadow-soft-editorial hover:shadow-card-hover transition-all cursor-pointer group relative overflow-hidden">
                         <div class="flex items-start justify-between gap-3">
-                            <span class="px-3 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
+                            <span class="px-3.5 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
                                 🌟 Estrella Local
                             </span>
-                            <span class="w-9 h-9 rounded-full bg-creamBg text-darkAccent flex items-center justify-center group-hover:bg-darkAccent group-hover:text-creamSurface transition-colors">
-                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            <span class="w-10 h-10 rounded-full bg-creamBg text-darkAccent flex items-center justify-center group-hover:bg-darkAccent group-hover:text-creamSurface transition-colors shrink-0">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
                             </span>
                         </div>
-                        <h4 class="mt-3 text-lg font-serif font-medium text-textPrimary leading-snug">
+                        <h4 class="mt-4 text-xl font-serif font-medium text-textPrimary leading-snug">
                             ¿Por qué viajar hasta Pochutla? Tu salud completa en Mazunte
                         </h4>
-                        <p class="mt-2 text-sm text-textMuted leading-relaxed line-clamp-2">
+                        <p class="mt-2.5 text-base text-textMuted leading-relaxed">
                             Salud familiar, control de diabetes e hipertensión, seguimiento prenatal y laboratorios sin traslados largos.
                         </p>
-                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center justify-between text-xs text-earthMuted">
-                            <span class="flex items-center gap-1 font-medium"><i data-lucide="users" class="w-4 h-4 text-sageGreen"></i> Nativos de Mazunte y Pueblos</span>
-                            <span class="font-bold text-darkAccent group-hover:underline flex items-center gap-0.5">Guión <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                        <div class="mt-5 pt-4 border-t border-gray-200/60 flex items-center justify-between text-xs sm:text-sm text-earthMuted">
+                            <span class="flex items-center gap-1.5 font-medium"><i data-lucide="users" class="w-4 h-4 text-sageGreen"></i> Nativos de Mazunte y Pueblos</span>
+                            <span class="font-bold text-darkAccent group-hover:underline flex items-center gap-0.5">Guión <i data-lucide="chevron-right" class="w-4 h-4"></i></span>
                         </div>
                     </div>
                 </div>
 
                 <!-- REEL 2 (Star Material - Avecindado) -->
                 <div class="reel-card avecindado" data-category="avecindado">
-                    <div onclick="openOverlay(2)" class="p-5 bg-creamSurface hover:bg-white rounded-3xl border border-gray-200/80 shadow-soft-editorial hover:shadow-card-hover transition-all cursor-pointer group relative overflow-hidden">
+                    <div onclick="openOverlay(2)" class="p-6 sm:p-7 bg-creamSurface hover:bg-white rounded-3xl border border-gray-200/80 shadow-soft-editorial hover:shadow-card-hover transition-all cursor-pointer group relative overflow-hidden">
                         <div class="flex items-start justify-between gap-3">
-                            <span class="px-3 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
+                            <span class="px-3.5 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
                                 🌟 Estrella Avecindado
                             </span>
-                            <span class="w-9 h-9 rounded-full bg-creamBg text-darkAccent flex items-center justify-center group-hover:bg-darkAccent group-hover:text-creamSurface transition-colors">
-                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            <span class="w-10 h-10 rounded-full bg-creamBg text-darkAccent flex items-center justify-center group-hover:bg-darkAccent group-hover:text-creamSurface transition-colors shrink-0">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
                             </span>
                         </div>
-                        <h4 class="mt-3 text-lg font-serif font-medium text-textPrimary leading-snug">
+                        <h4 class="mt-4 text-xl font-serif font-medium text-textPrimary leading-snug">
                             Medicina Preventiva & Diagnóstico Integral en la Costa
                         </h4>
-                        <p class="mt-2 text-sm text-textMuted leading-relaxed line-clamp-2">
+                        <p class="mt-2.5 text-base text-textMuted leading-relaxed">
                             Para residentes nacionales e internacionales. Rayos X portátiles digitales, vacuna VPH y chequeos.
                         </p>
-                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center justify-between text-xs text-earthMuted">
-                            <span class="flex items-center gap-1 font-medium"><i data-lucide="home" class="w-4 h-4 text-sageGreen"></i> Residentes / Expatriados</span>
-                            <span class="font-bold text-darkAccent group-hover:underline flex items-center gap-0.5">Guión <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                        <div class="mt-5 pt-4 border-t border-gray-200/60 flex items-center justify-between text-xs sm:text-sm text-earthMuted">
+                            <span class="flex items-center gap-1.5 font-medium"><i data-lucide="home" class="w-4 h-4 text-sageGreen"></i> Residentes / Expatriados</span>
+                            <span class="font-bold text-darkAccent group-hover:underline flex items-center gap-0.5">Guión <i data-lucide="chevron-right" class="w-4 h-4"></i></span>
                         </div>
                     </div>
                 </div>
 
                 <!-- REEL 3 (Star Material - Turista) -->
                 <div class="reel-card visitante" data-category="visitante">
-                    <div onclick="openOverlay(3)" class="p-5 bg-creamSurface hover:bg-white rounded-3xl border border-gray-200/80 shadow-soft-editorial hover:shadow-card-hover transition-all cursor-pointer group relative overflow-hidden">
+                    <div onclick="openOverlay(3)" class="p-6 sm:p-7 bg-creamSurface hover:bg-white rounded-3xl border border-gray-200/80 shadow-soft-editorial hover:shadow-card-hover transition-all cursor-pointer group relative overflow-hidden">
                         <div class="flex items-start justify-between gap-3">
-                            <span class="px-3 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
+                            <span class="px-3.5 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
                                 🌟 Estrella Turista
                             </span>
-                            <span class="w-9 h-9 rounded-full bg-creamBg text-darkAccent flex items-center justify-center group-hover:bg-darkAccent group-hover:text-creamSurface transition-colors">
-                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            <span class="w-10 h-10 rounded-full bg-creamBg text-darkAccent flex items-center justify-center group-hover:bg-darkAccent group-hover:text-creamSurface transition-colors shrink-0">
+                                <i data-lucide="arrow-up-right" class="w-5 h-5"></i>
                             </span>
                         </div>
-                        <h4 class="mt-3 text-lg font-serif font-medium text-textPrimary leading-snug">
+                        <h4 class="mt-4 text-xl font-serif font-medium text-textPrimary leading-snug">
                             Urgencias, Traumatología por Oleaje & Sueros Terapéuticos
                         </h4>
-                        <p class="mt-2 text-sm text-textMuted leading-relaxed line-clamp-2">
+                        <p class="mt-2.5 text-base text-textMuted leading-relaxed">
                             Atención inmediata ante traumatismos por olas, cortes, deshidratación y golpes de calor.
                         </p>
-                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center justify-between text-xs text-earthMuted">
-                            <span class="flex items-center gap-1 font-medium"><i data-lucide="compass" class="w-4 h-4 text-sageGreen"></i> Visitantes & Población Flotante</span>
-                            <span class="font-bold text-darkAccent group-hover:underline flex items-center gap-0.5">Guión <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                        <div class="mt-5 pt-4 border-t border-gray-200/60 flex items-center justify-between text-xs sm:text-sm text-earthMuted">
+                            <span class="flex items-center gap-1.5 font-medium"><i data-lucide="compass" class="w-4 h-4 text-sageGreen"></i> Visitantes & Población Flotante</span>
+                            <span class="font-bold text-darkAccent group-hover:underline flex items-center gap-0.5">Guión <i data-lucide="chevron-right" class="w-4 h-4"></i></span>
                         </div>
                     </div>
                 </div>
 
                 <!-- REEL 4 -->
                 <div class="reel-card local avecindado" data-category="avecindado">
-                    <div onclick="openOverlay(4)" class="p-4 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
+                    <div onclick="openOverlay(4)" class="p-5 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
                         <div class="space-y-1">
                             <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">Reel 04 • Diagnóstico Digital</span>
-                            <h4 class="text-base font-semibold text-textPrimary">Rayos X Digitales Portátiles</h4>
+                            <h4 class="text-lg font-semibold text-textPrimary">Rayos X Digitales Portátiles</h4>
                         </div>
-                        <i data-lucide="chevron-right" class="w-5 h-5 text-earthMuted group-hover:text-darkAccent transition-colors"></i>
+                        <i data-lucide="chevron-right" class="w-6 h-6 text-earthMuted group-hover:text-darkAccent transition-colors shrink-0"></i>
                     </div>
                 </div>
 
                 <!-- REEL 5 -->
                 <div class="reel-card avecindado" data-category="avecindado">
-                    <div onclick="openOverlay(5)" class="p-4 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
+                    <div onclick="openOverlay(5)" class="p-5 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
                         <div class="space-y-1">
                             <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">Reel 05 • Prevención</span>
-                            <h4 class="text-base font-semibold text-textPrimary">Vacunación Especializada VPH</h4>
+                            <h4 class="text-lg font-semibold text-textPrimary">Vacunación Especializada VPH</h4>
                         </div>
-                        <i data-lucide="chevron-right" class="w-5 h-5 text-earthMuted group-hover:text-darkAccent transition-colors"></i>
+                        <i data-lucide="chevron-right" class="w-6 h-6 text-earthMuted group-hover:text-darkAccent transition-colors shrink-0"></i>
                     </div>
                 </div>
 
                 <!-- REEL 6 -->
                 <div class="reel-card local" data-category="local">
-                    <div onclick="openOverlay(6)" class="p-4 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
+                    <div onclick="openOverlay(6)" class="p-5 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
                         <div class="space-y-1">
                             <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">Reel 06 • Salud Familiar</span>
-                            <h4 class="text-base font-semibold text-textPrimary">Acompañamiento en Control Crónico</h4>
+                            <h4 class="text-lg font-semibold text-textPrimary">Acompañamiento en Control Crónico</h4>
                         </div>
-                        <i data-lucide="chevron-right" class="w-5 h-5 text-earthMuted group-hover:text-darkAccent transition-colors"></i>
+                        <i data-lucide="chevron-right" class="w-6 h-6 text-earthMuted group-hover:text-darkAccent transition-colors shrink-0"></i>
                     </div>
                 </div>
 
                 <!-- REEL 7 -->
                 <div class="reel-card visitante avecindado" data-category="visitante">
-                    <div onclick="openOverlay(7)" class="p-4 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
+                    <div onclick="openOverlay(7)" class="p-5 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
                         <div class="space-y-1">
                             <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">Reel 07 • Bienestar</span>
-                            <h4 class="text-base font-semibold text-textPrimary">Sueros Terapéuticos & Hidratación</h4>
+                            <h4 class="text-lg font-semibold text-textPrimary">Sueros Terapéuticos & Hidratación</h4>
                         </div>
-                        <i data-lucide="chevron-right" class="w-5 h-5 text-earthMuted group-hover:text-darkAccent transition-colors"></i>
+                        <i data-lucide="chevron-right" class="w-6 h-6 text-earthMuted group-hover:text-darkAccent transition-colors shrink-0"></i>
                     </div>
                 </div>
 
                 <!-- REEL 8 -->
                 <div class="reel-card local avecindado visitante" data-category="local">
-                    <div onclick="openOverlay(8)" class="p-4 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
+                    <div onclick="openOverlay(8)" class="p-5 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
                         <div class="space-y-1">
                             <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">Reel 08 • Accesibilidad</span>
-                            <h4 class="text-base font-semibold text-textPrimary">Sin Citas: Tu Consultorio en Mazunte</h4>
+                            <h4 class="text-lg font-semibold text-textPrimary">Sin Citas: Tu Consultorio en Mazunte</h4>
                         </div>
-                        <i data-lucide="chevron-right" class="w-5 h-5 text-earthMuted group-hover:text-darkAccent transition-colors"></i>
+                        <i data-lucide="chevron-right" class="w-6 h-6 text-earthMuted group-hover:text-darkAccent transition-colors shrink-0"></i>
                     </div>
                 </div>
 
@@ -323,7 +324,7 @@
         </section>
 
         <!-- BTL & FIELD ACTIVATIONS SECTION -->
-        <section class="space-y-4 pt-2">
+        <section class="space-y-4.5 pt-2">
             <div class="flex items-baseline justify-between px-1">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-sageGreen block">Estrategia Territorial</span>
@@ -331,136 +332,136 @@
                         Acciones BTL & Activación Local
                     </h3>
                 </div>
-                <span class="px-3 py-1 bg-sageLight text-sageGreen text-xs font-bold rounded-full">
+                <span class="px-3 py-1 bg-sageLight text-sageGreen text-xs font-bold rounded-full shrink-0">
                     Impacto Directo
                 </span>
             </div>
 
-            <p class="text-sm text-textMuted leading-relaxed px-1">
+            <p class="text-base text-textMuted leading-relaxed px-1">
                 Para complementar la estrategia digital y posicionar la renovada propuesta médica del Dr. Marco, implementaremos 4 pilares tácticos de penetración territorial:
             </p>
 
             <!-- BTL Card 1 -->
-            <div class="p-5 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-3">
-                <div class="flex items-start gap-3">
-                    <div class="w-10 h-10 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
-                        <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+            <div class="p-6 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-4">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-11 h-11 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
+                        <i data-lucide="heart-handshake" class="w-6 h-6"></i>
                     </div>
                     <div>
                         <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">BTL 01 • Impacto Social Local</span>
-                        <h4 class="text-base font-serif font-bold text-textPrimary">Pláticas Gratuitas sobre Control de Diabetes</h4>
+                        <h4 class="text-lg font-serif font-bold text-textPrimary leading-snug">Pláticas Gratuitas sobre Control de Diabetes</h4>
                     </div>
                 </div>
-                <p class="text-sm text-textMuted leading-relaxed pl-13">
+                <p class="text-base text-textMuted leading-relaxed">
                     Talleres comunitarios presenciales impartidos por el doctor. Al finalizar cada sesión, se entrega a todos los asistentes una <strong class="text-textPrimary font-semibold">hoja impresa con lineamientos prácticos para el control de diabetes en casa</strong> y ficha de seguimiento.
                 </p>
-                <div class="pl-13 pt-1 flex items-center text-xs text-sageGreen font-semibold gap-1.5">
+                <div class="pt-1 flex items-center text-xs sm:text-sm text-sageGreen font-semibold gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 shrink-0"></i> Crea vínculo humano y genera primeras consultas de seguimiento.
                 </div>
             </div>
 
             <!-- BTL Card 2 -->
-            <div class="p-5 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-3">
-                <div class="flex items-start gap-3">
-                    <div class="w-10 h-10 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
-                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+            <div class="p-6 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-4">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-11 h-11 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
+                        <i data-lucide="map-pin" class="w-6 h-6"></i>
                     </div>
                     <div>
                         <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">BTL 02 • Orientación Geográfica</span>
-                        <h4 class="text-base font-serif font-bold text-textPrimary">Señalización Bilingüe en Cruces Clave</h4>
+                        <h4 class="text-lg font-serif font-bold text-textPrimary leading-snug">Señalización Bilingüe en Cruces Clave</h4>
                     </div>
                 </div>
-                <p class="text-sm text-textMuted leading-relaxed pl-13">
+                <p class="text-base text-textMuted leading-relaxed">
                     Instalación de señaléctica limpia, estética y clara en ubicaciones neurálgicas: <strong class="text-textPrimary font-semibold">Crucero San Agustinillo-Mazunte y la entrada a Rinconcito</strong>. Contenido en español e inglés con código QR de acceso directo en Google Maps.
                 </p>
-                <div class="pl-13 pt-1 flex items-center text-xs text-sageGreen font-semibold gap-1.5">
+                <div class="pt-1 flex items-center text-xs sm:text-sm text-sageGreen font-semibold gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 shrink-0"></i> Captación visual continua de transeúntes y conductores.
                 </div>
             </div>
 
             <!-- BTL Card 3 -->
-            <div class="p-5 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-3">
-                <div class="flex items-start gap-3">
-                    <div class="w-10 h-10 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
-                        <i data-lucide="waves" class="w-5 h-5"></i>
+            <div class="p-6 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-4">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-11 h-11 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
+                        <i data-lucide="waves" class="w-6 h-6"></i>
                     </div>
                     <div>
                         <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">BTL 03 • Aliados en Playa</span>
-                        <h4 class="text-base font-serif font-bold text-textPrimary">Señalización & Alianza con Salvavidas</h4>
+                        <h4 class="text-lg font-serif font-bold text-textPrimary leading-snug">Señalización & Alianza con Salvavidas</h4>
                     </div>
                 </div>
-                <p class="text-sm text-textMuted leading-relaxed pl-13">
+                <p class="text-base text-textMuted leading-relaxed">
                     Puntos informativos bilingües en torres de salvavidas enfocados en prevención de golpes por oleaje, cortaduras y golpes de calor. Se otorga un <strong class="text-textPrimary font-semibold">porcentaje de descuento especial en atención médica para todos los salvavidas</strong> de la zona.
                 </p>
-                <div class="pl-13 pt-1 flex items-center text-xs text-sageGreen font-semibold gap-1.5">
+                <div class="pt-1 flex items-center text-xs sm:text-sm text-sageGreen font-semibold gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 shrink-0"></i> Convierte a los salvavidas en el primer canal de recomendación directa.
                 </div>
             </div>
 
             <!-- BTL Card 4 -->
-            <div class="p-5 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-3">
-                <div class="flex items-start gap-3">
-                    <div class="w-10 h-10 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
-                        <i data-lucide="building-2" class="w-5 h-5"></i>
+            <div class="p-6 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-4">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-11 h-11 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
+                        <i data-lucide="building-2" class="w-6 h-6"></i>
                     </div>
                     <div>
                         <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">BTL 04 • Red Hotelera & Turística</span>
-                        <h4 class="text-base font-serif font-bold text-textPrimary">Colaboración con Hoteles y Posadas</h4>
+                        <h4 class="text-lg font-serif font-bold text-textPrimary leading-snug">Colaboración con Hoteles y Posadas</h4>
                     </div>
                 </div>
-                <p class="text-sm text-textMuted leading-relaxed pl-13">
+                <p class="text-base text-textMuted leading-relaxed">
                     Entrega de mini stands de escritorio elegantes para recepción junto con tarjetas de emergencia y flyers informativos. Se brinda un <strong class="text-textPrimary font-semibold">porcentaje de descuento para todos los trabajadores de los hoteles colaboradores</strong>.
                 </p>
-                <div class="pl-13 pt-1 flex items-center text-xs text-sageGreen font-semibold gap-1.5">
+                <div class="pt-1 flex items-center text-xs sm:text-sm text-sageGreen font-semibold gap-1.5">
                     <i data-lucide="check-circle-2" class="w-4 h-4 shrink-0"></i> Presencia fija en el punto de decisión de turistas y cuida al personal hotelero.
                 </div>
             </div>
 
-            <!-- Agency Scope & Value Guarantee Card -->
-            <div class="p-6 rounded-3xl bg-darkAccent text-creamSurface space-y-3 shadow-soft-editorial">
-                <div class="flex items-center gap-2.5 text-sageLight">
+            <!-- Agency Scope & Value Guarantee Card (Padding amplio corregido p-7 sm:p-8) -->
+            <div class="p-7 sm:p-8 rounded-3xl bg-darkAccent text-creamSurface space-y-4 shadow-soft-editorial">
+                <div class="flex items-center gap-3 text-sageLight">
                     <i data-lucide="shield-check" class="w-6 h-6 shrink-0"></i>
-                    <h4 class="text-xs font-bold uppercase tracking-wider">Alcance de Gestión Agencia (Todo Incluido)</h4>
+                    <h4 class="text-sm font-bold uppercase tracking-wider">Alcance de Gestión Agencia (Todo Incluido)</h4>
                 </div>
-                <p class="text-sm text-gray-300 leading-relaxed">
+                <p class="text-base text-gray-200 leading-relaxed">
                     Como agencia, asumimos <strong class="text-white font-semibold">toda la gestión de relaciones públicas, negociaciones, acuerdos, permisos municipales y diseño gráfico</strong> de todos los materiales dentro de la iguala mensual. 
                 </p>
-                <p class="text-xs text-gray-400 italic pt-2 border-t border-white/10">
+                <p class="text-xs sm:text-sm text-gray-300 italic pt-3 border-t border-white/15">
                     *El único costo extra corresponderá exclusivamente a la impresión o manufactura física con proveedores externos.
                 </p>
             </div>
         </section>
 
         <!-- Medical Services Showcase Card -->
-        <section class="p-6 rounded-4xl bg-sageGreen text-creamSurface space-y-4 shadow-soft-editorial relative overflow-hidden">
+        <section class="p-6.5 sm:p-7 rounded-4xl bg-sageGreen text-creamSurface space-y-5 shadow-soft-editorial relative overflow-hidden">
             <div class="space-y-1.5">
-                <span class="text-xs font-bold text-sageLight uppercase tracking-wider">Consultorio 2 • Mazunte</span>
-                <h3 class="text-xl font-serif font-medium text-white">Servicios de Atención Directa</h3>
-                <p class="text-xs text-sageLight/90 font-medium">Soluciones médicas completas sin necesidad de previa cita.</p>
+                <span class="text-xs sm:text-sm font-bold text-sageLight uppercase tracking-wider">Consultorio 2 • Mazunte</span>
+                <h3 class="text-2xl font-serif font-medium text-white">Servicios de Atención Directa</h3>
+                <p class="text-sm sm:text-base text-sageLight/90 font-medium">Soluciones médicas completas sin necesidad de previa cita.</p>
             </div>
 
-            <div class="grid grid-cols-2 gap-3 pt-2 text-xs sm:text-sm">
-                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+            <div class="grid grid-cols-2 gap-3.5 pt-2 text-sm sm:text-base">
+                <div class="p-4 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-3">
                     <i data-lucide="stethoscope" class="w-5 h-5 text-sageLight shrink-0"></i>
                     <span class="text-white font-medium">Consultas Médicas</span>
                 </div>
-                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                <div class="p-4 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-3">
                     <i data-lucide="activity" class="w-5 h-5 text-sageLight shrink-0"></i>
                     <span class="text-white font-medium">Ultrasonidos</span>
                 </div>
-                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                <div class="p-4 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-3">
                     <i data-lucide="scan" class="w-5 h-5 text-sageLight shrink-0"></i>
                     <span class="text-white font-medium">Rayos X Portátiles</span>
                 </div>
-                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                <div class="p-4 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-3">
                     <i data-lucide="test-tube-2" class="w-5 h-5 text-sageLight shrink-0"></i>
                     <span class="text-white font-medium">Muestras Laboratorio</span>
                 </div>
-                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                <div class="p-4 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-3">
                     <i data-lucide="heart-pulse" class="w-5 h-5 text-sageLight shrink-0"></i>
                     <span class="text-white font-medium">Electrocardiogramas</span>
                 </div>
-                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                <div class="p-4 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-3">
                     <i data-lucide="syringe" class="w-5 h-5 text-sageLight shrink-0"></i>
                     <span class="text-white font-medium">Vacunación VPH</span>
                 </div>
@@ -468,9 +469,9 @@
         </section>
 
         <!-- Footer Info -->
-        <footer class="text-center text-xs text-textMuted py-4 space-y-2">
-            <p class="font-serif italic text-sageGreen text-sm">Dr. Marco Antonio Pérez Elizarrarás</p>
-            <p class="text-xs leading-relaxed">
+        <footer class="text-center text-xs sm:text-sm text-textMuted py-6 space-y-2.5">
+            <p class="font-serif italic text-sageGreen text-base">Dr. Marco Antonio Pérez Elizarrarás</p>
+            <p class="text-xs sm:text-sm leading-relaxed">
                 Consultorio Mazunte: Junto a la Agencia de Policía<br>
                 Sede Central: Calle Reforma 1, Col. Centro, San Pedro Pochutla
             </p>
@@ -479,41 +480,41 @@
     </main>
 
     <!-- OVERLAY SCRIPT MODAL (Clean Editorial Frame) -->
-    <div id="script-modal" class="fixed inset-0 z-50 hidden modal-overlay flex items-center justify-center p-3 sm:p-4 transition-all duration-300">
-        <div class="bg-creamSurface border border-white/80 w-full max-w-md rounded-4xl shadow-overlay overflow-hidden flex flex-col max-h-[90vh]">
+    <div id="script-modal" class="fixed inset-0 z-50 hidden modal-overlay flex items-center justify-center p-4 sm:p-6 transition-all duration-300">
+        <div class="bg-creamSurface border border-white/90 w-full max-w-lg rounded-4xl shadow-overlay overflow-hidden flex flex-col max-h-[92vh]">
             
             <!-- Modal Header -->
-            <div class="p-5 border-b border-gray-200/80 flex items-center justify-between bg-creamBg/70">
+            <div class="p-6 border-b border-gray-200/80 flex items-center justify-between bg-creamBg/80">
                 <div>
-                    <span id="modal-badge" class="px-3 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
+                    <span id="modal-badge" class="px-3.5 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
                         REEL 01
                     </span>
-                    <p id="modal-target" class="text-xs text-earthMuted font-semibold mt-1">Comunidad Local</p>
+                    <p id="modal-target" class="text-xs sm:text-sm text-earthMuted font-semibold mt-2">Comunidad Local</p>
                 </div>
-                <button onclick="closeOverlay()" class="w-10 h-10 rounded-full bg-creamBg text-textPrimary hover:bg-darkAccent hover:text-white flex items-center justify-center transition-colors">
+                <button onclick="closeOverlay()" class="w-11 h-11 rounded-full bg-creamBg text-textPrimary hover:bg-darkAccent hover:text-white flex items-center justify-center transition-colors shrink-0">
                     <i data-lucide="x" class="w-5 h-5"></i>
                 </button>
             </div>
 
             <!-- Modal Body -->
-            <div class="p-5 overflow-y-auto space-y-4 text-sm">
+            <div class="p-6 overflow-y-auto space-y-5 text-base">
                 <div>
-                    <h3 id="modal-title" class="text-lg font-serif font-bold text-textPrimary leading-snug">
+                    <h3 id="modal-title" class="text-xl font-serif font-bold text-textPrimary leading-snug">
                         Título del Reel
                     </h3>
-                    <p id="modal-hook" class="text-sageGreen font-semibold mt-1 text-xs">
+                    <p id="modal-hook" class="text-sageGreen font-semibold mt-1.5 text-xs sm:text-sm">
                         Hook estratégico de entrada
                     </p>
                 </div>
 
                 <!-- Timeline / Script Steps -->
-                <div class="space-y-3.5 pt-1" id="modal-script-steps">
+                <div class="space-y-4 pt-1" id="modal-script-steps">
                     <!-- Dynamic steps injected via JS -->
                 </div>
 
                 <!-- Production Instructions -->
-                <div class="p-4 bg-creamBg rounded-2xl border border-gray-200/70 space-y-2 text-xs">
-                    <div class="font-bold text-textPrimary flex items-center gap-1.5 text-xs">
+                <div class="p-5 bg-creamBg rounded-2xl border border-gray-200/80 space-y-2 text-xs sm:text-sm">
+                    <div class="font-bold text-textPrimary flex items-center gap-1.5">
                         <i data-lucide="clapperboard" class="w-4 h-4 text-sageGreen"></i> Guía de Grabación:
                     </div>
                     <p id="modal-note" class="text-textMuted leading-relaxed">
@@ -523,11 +524,11 @@
             </div>
 
             <!-- Modal Footer -->
-            <div class="p-4 border-t border-gray-200/80 bg-creamBg/80 flex items-center justify-between text-xs">
-                <span class="text-earthMuted flex items-center gap-1 font-semibold">
-                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-sageGreen"></i> Mazunte (Agencia de Policía)
+            <div class="p-5 border-t border-gray-200/80 bg-creamBg/90 flex items-center justify-between text-xs sm:text-sm">
+                <span class="text-earthMuted flex items-center gap-1.5 font-semibold">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-sageGreen"></i> Mazunte (Agencia de Policía)
                 </span>
-                <button onclick="closeOverlay()" class="px-5 py-2.5 bg-darkAccent text-creamSurface font-semibold text-xs rounded-full hover:bg-darkAccentHover transition-colors shadow-sm">
+                <button onclick="closeOverlay()" class="px-6 py-2.5 bg-darkAccent text-creamSurface font-semibold text-xs sm:text-sm rounded-full hover:bg-darkAccentHover transition-colors shadow-sm">
                     Cerrar Guión
                 </button>
             </div>
@@ -653,14 +654,14 @@
 
             data.steps.forEach(step => {
                 const stepEl = document.createElement('div');
-                stepEl.className = 'p-3.5 rounded-2xl bg-creamBg border border-gray-200/80 space-y-1.5';
+                stepEl.className = 'p-4 rounded-2xl bg-creamBg border border-gray-200/80 space-y-2';
                 stepEl.innerHTML = `
-                    <div class="flex justify-between text-xs text-sageGreen font-bold">
+                    <div class="flex justify-between text-xs sm:text-sm text-sageGreen font-bold">
                         <span>⏱️ ${step.time}</span>
                         <span class="text-earthMuted">Audio & Visual</span>
                     </div>
-                    <p class="text-textPrimary font-semibold text-sm leading-snug">🗣️ "${step.audio}"</p>
-                    <p class="text-textMuted text-xs italic">🎬 ${step.visual}</p>
+                    <p class="text-textPrimary font-semibold text-base leading-snug">🗣️ "${step.audio}"</p>
+                    <p class="text-textMuted text-xs sm:text-sm italic">🎬 ${step.visual}</p>
                 `;
                 stepsContainer.appendChild(stepEl);
             });
