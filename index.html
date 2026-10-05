@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia Digital & BTL - Dr. Marco Elizarrarás | Consultorio Mazunte</title>
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Google Fonts: Playfair Display (Serif) & Plus Jakarta Sans (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        creamBg: '#F4F1EA',
+                        creamSurface: '#FAF8F5',
+                        cardBg: '#EBE6DC',
+                        darkAccent: '#1C1C1E',
+                        darkAccentHover: '#2C2C2E',
+                        sageGreen: '#585E49',
+                        sageLight: '#E3E7DC',
+                        earthMuted: '#8A8578',
+                        textPrimary: '#1A1A18',
+                        textMuted: '#52504A',
+                        accentWarm: '#C86D51'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    },
+                    borderRadius: {
+                        '3xl': '1.5rem',
+                        '4xl': '2rem',
+                        '5xl': '2.5rem'
+                    },
+                    boxShadow: {
+                        'soft-editorial': '0 10px 30px -10px rgba(28, 28, 30, 0.05)',
+                        'card-hover': '0 20px 40px -15px rgba(28, 28, 30, 0.08)',
+                        'overlay': '0 25px 50px -12px rgba(0, 0, 0, 0.25)'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #F4F1EA;
+            color: #1A1A18;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .bg-organic-patterns {
+            background-image: 
+                radial-gradient(circle at 90% 10%, rgba(88, 94, 73, 0.06) 0%, transparent 40%),
+                radial-gradient(circle at 10% 80%, rgba(138, 133, 120, 0.08) 0%, transparent 50%);
+        }
+
+        .modal-overlay {
+            background: rgba(28, 28, 30, 0.5);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #F4F1EA;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #8A8578;
+            border-radius: 999px;
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-16 antialiased bg-organic-patterns">
+
+    <!-- Top Minimalist Navigation Bar -->
+    <header class="sticky top-0 z-30 bg-creamSurface/95 backdrop-blur-md border-b border-gray-200/60 px-4 py-4 transition-all">
+        <div class="max-w-md mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-11 h-11 rounded-full bg-sageGreen text-creamSurface flex items-center justify-center font-serif text-xl font-bold shadow-sm">
+                    M
+                </div>
+                <div>
+                    <h1 class="text-base font-bold text-textPrimary font-serif leading-tight">Dr. Marco Elizarrarás</h1>
+                    <p class="text-xs text-sageGreen font-semibold flex items-center gap-1 mt-0.5">
+                        <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Consultorio 2 • Mazunte
+                    </p>
+                </div>
+            </div>
+            <a href="https://wa.me/522221136211" target="_blank" class="px-4 py-2.5 bg-darkAccent hover:bg-darkAccentHover text-creamSurface text-sm font-semibold rounded-full shadow-sm transition-all flex items-center gap-1.5">
+                <i data-lucide="phone" class="w-4 h-4"></i>
+                <span>Contacto</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main App Container -->
+    <main class="max-w-md mx-auto px-4 pt-6 space-y-7">
+
+        <!-- Hero Proposal Card -->
+        <section class="p-6 rounded-4xl bg-creamSurface shadow-soft-editorial border border-white/80 relative overflow-hidden space-y-5">
+            <div class="space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                    <span class="px-3.5 py-1 bg-sageLight text-sageGreen text-xs font-bold uppercase tracking-wider rounded-full border border-sageGreen/20">
+                        Estrategia Integral 360°
+                    </span>
+                    <span class="text-xs text-textMuted flex items-center gap-1 font-semibold">
+                        <i data-lucide="check-circle" class="w-4 h-4 text-sageGreen"></i> Sin Cita Previa
+                    </span>
+                </div>
+
+                <h2 class="text-2xl sm:text-3xl font-serif font-medium text-textPrimary leading-tight">
+                    Propuesta Digital & BTL <span class="italic text-sageGreen">para Mazunte</span>
+                </h2>
+                
+                <p class="text-sm text-textMuted leading-relaxed">
+                    Plan estratégico que combina <strong class="text-textPrimary font-semibold">8 Reels de alto impacto</strong> y <strong class="text-textPrimary font-semibold">activaciones territoriales (BTL)</strong> para conectar con la comunidad e impulsar el <strong class="text-textPrimary font-semibold">Consultorio 2 (Junto a la Agencia de Policía)</strong>.
+                </p>
+            </div>
+
+            <!-- Strategic Transition Banner -->
+            <div class="p-4 bg-sageLight/60 rounded-2xl border border-sageGreen/20 space-y-2">
+                <div class="flex items-center gap-2 text-sageGreen font-serif font-semibold text-sm">
+                    <i data-lucide="sparkles" class="w-4 h-4 shrink-0"></i>
+                    <span>Renovación & Compromiso Local</span>
+                </div>
+                <p class="text-xs text-textMuted leading-relaxed">
+                    Es fundamental evidenciar el interés genuino por beneficiar a la comunidad, posicionando a este <strong class="text-textPrimary font-semibold">nuevo equipo médico profesional</strong> que asume el consultorio con una propuesta cálida, tecnológica y humana, diferenciándose por completo de gestiones anteriores.
+                </p>
+            </div>
+
+            <!-- Essential Info Grid -->
+            <div class="pt-3 border-t border-gray-200/80 grid grid-cols-2 gap-3 text-xs">
+                <div class="space-y-1">
+                    <span class="block text-xs uppercase tracking-wider text-earthMuted font-bold">Ubicación Clave</span>
+                    <p class="font-semibold text-textPrimary text-xs leading-snug">Mazunte, Oax. (Junto a la Agencia de Policía)</p>
+                </div>
+                <div class="space-y-1 text-right">
+                    <span class="block text-xs uppercase tracking-wider text-earthMuted font-bold">Informes Directos</span>
+                    <a href="tel:2221136211" class="font-bold text-darkAccent text-xs block hover:underline">222 113 6211</a>
+                    <span class="text-xs text-textMuted block">958 584 0888</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience Segment Tabs -->
+        <section class="space-y-3">
+            <div class="flex items-center justify-between">
+                <h3 class="text-xs font-bold uppercase tracking-widest text-earthMuted flex items-center gap-1.5">
+                    <i data-lucide="sliders" class="w-4 h-4 text-sageGreen"></i> Audiencia Objetivo
+                </h3>
+                <span class="text-xs text-sageGreen font-semibold italic">Filtra la propuesta</span>
+            </div>
+
+            <div class="grid grid-cols-4 gap-1.5 p-1.5 bg-cardBg/80 rounded-full border border-gray-300/50 text-xs font-semibold">
+                <button onclick="filterReels('all')" id="btn-all" class="tab-btn py-2.5 px-1 rounded-full text-center bg-darkAccent text-creamSurface shadow-sm transition-all">
+                    Todos
+                </button>
+                <button onclick="filterReels('local')" id="btn-local" class="tab-btn py-2.5 px-1 rounded-full text-center text-textMuted hover:text-textPrimary transition-all">
+                    Local
+                </button>
+                <button onclick="filterReels('avecindado')" id="btn-avecindado" class="tab-btn py-2.5 px-1 rounded-full text-center text-textMuted hover:text-textPrimary transition-all">
+                    Avecindado
+                </button>
+                <button onclick="filterReels('visitante')" id="btn-visitante" class="tab-btn py-2.5 px-1 rounded-full text-center text-textMuted hover:text-textPrimary transition-all">
+                    Turista
+                </button>
+            </div>
+        </section>
+
+        <!-- Reels Catalog Section -->
+        <section class="space-y-4">
+            <div class="flex items-baseline justify-between px-1">
+                <h3 class="text-lg font-serif font-semibold text-textPrimary">
+                    Estrategia Audiovisual (8 Reels)
+                </h3>
+                <span class="text-xs text-textMuted font-medium">Toca para abrir guión</span>
+            </div>
+
+            <div class="space-y-4" id="reels-list">
+
+                <!-- REEL 1 (Star Material - Local) -->
+                <div class="reel-card local" data-category="local">
+                    <div onclick="openOverlay(1)" class="p-5 bg-creamSurface hover:bg-white rounded-3xl border border-gray-200/80 shadow-soft-editorial hover:shadow-card-hover transition-all cursor-pointer group relative overflow-hidden">
+                        <div class="flex items-start justify-between gap-3">
+                            <span class="px-3 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
+                                🌟 Estrella Local
+                            </span>
+                            <span class="w-9 h-9 rounded-full bg-creamBg text-darkAccent flex items-center justify-center group-hover:bg-darkAccent group-hover:text-creamSurface transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                        <h4 class="mt-3 text-lg font-serif font-medium text-textPrimary leading-snug">
+                            ¿Por qué viajar hasta Pochutla? Tu salud completa en Mazunte
+                        </h4>
+                        <p class="mt-2 text-sm text-textMuted leading-relaxed line-clamp-2">
+                            Salud familiar, control de diabetes e hipertensión, seguimiento prenatal y laboratorios sin traslados largos.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center justify-between text-xs text-earthMuted">
+                            <span class="flex items-center gap-1 font-medium"><i data-lucide="users" class="w-4 h-4 text-sageGreen"></i> Nativos de Mazunte y Pueblos</span>
+                            <span class="font-bold text-darkAccent group-hover:underline flex items-center gap-0.5">Guión <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REEL 2 (Star Material - Avecindado) -->
+                <div class="reel-card avecindado" data-category="avecindado">
+                    <div onclick="openOverlay(2)" class="p-5 bg-creamSurface hover:bg-white rounded-3xl border border-gray-200/80 shadow-soft-editorial hover:shadow-card-hover transition-all cursor-pointer group relative overflow-hidden">
+                        <div class="flex items-start justify-between gap-3">
+                            <span class="px-3 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
+                                🌟 Estrella Avecindado
+                            </span>
+                            <span class="w-9 h-9 rounded-full bg-creamBg text-darkAccent flex items-center justify-center group-hover:bg-darkAccent group-hover:text-creamSurface transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                        <h4 class="mt-3 text-lg font-serif font-medium text-textPrimary leading-snug">
+                            Medicina Preventiva & Diagnóstico Integral en la Costa
+                        </h4>
+                        <p class="mt-2 text-sm text-textMuted leading-relaxed line-clamp-2">
+                            Para residentes nacionales e internacionales. Rayos X portátiles digitales, vacuna VPH y chequeos.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center justify-between text-xs text-earthMuted">
+                            <span class="flex items-center gap-1 font-medium"><i data-lucide="home" class="w-4 h-4 text-sageGreen"></i> Residentes / Expatriados</span>
+                            <span class="font-bold text-darkAccent group-hover:underline flex items-center gap-0.5">Guión <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REEL 3 (Star Material - Turista) -->
+                <div class="reel-card visitante" data-category="visitante">
+                    <div onclick="openOverlay(3)" class="p-5 bg-creamSurface hover:bg-white rounded-3xl border border-gray-200/80 shadow-soft-editorial hover:shadow-card-hover transition-all cursor-pointer group relative overflow-hidden">
+                        <div class="flex items-start justify-between gap-3">
+                            <span class="px-3 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
+                                🌟 Estrella Turista
+                            </span>
+                            <span class="w-9 h-9 rounded-full bg-creamBg text-darkAccent flex items-center justify-center group-hover:bg-darkAccent group-hover:text-creamSurface transition-colors">
+                                <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            </span>
+                        </div>
+                        <h4 class="mt-3 text-lg font-serif font-medium text-textPrimary leading-snug">
+                            Urgencias, Traumatología por Oleaje & Sueros Terapéuticos
+                        </h4>
+                        <p class="mt-2 text-sm text-textMuted leading-relaxed line-clamp-2">
+                            Atención inmediata ante traumatismos por olas, cortes, deshidratación y golpes de calor.
+                        </p>
+                        <div class="mt-4 pt-3 border-t border-gray-200/60 flex items-center justify-between text-xs text-earthMuted">
+                            <span class="flex items-center gap-1 font-medium"><i data-lucide="compass" class="w-4 h-4 text-sageGreen"></i> Visitantes & Población Flotante</span>
+                            <span class="font-bold text-darkAccent group-hover:underline flex items-center gap-0.5">Guión <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- REEL 4 -->
+                <div class="reel-card local avecindado" data-category="avecindado">
+                    <div onclick="openOverlay(4)" class="p-4 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">Reel 04 • Diagnóstico Digital</span>
+                            <h4 class="text-base font-semibold text-textPrimary">Rayos X Digitales Portátiles</h4>
+                        </div>
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-earthMuted group-hover:text-darkAccent transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- REEL 5 -->
+                <div class="reel-card avecindado" data-category="avecindado">
+                    <div onclick="openOverlay(5)" class="p-4 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">Reel 05 • Prevención</span>
+                            <h4 class="text-base font-semibold text-textPrimary">Vacunación Especializada VPH</h4>
+                        </div>
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-earthMuted group-hover:text-darkAccent transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- REEL 6 -->
+                <div class="reel-card local" data-category="local">
+                    <div onclick="openOverlay(6)" class="p-4 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">Reel 06 • Salud Familiar</span>
+                            <h4 class="text-base font-semibold text-textPrimary">Acompañamiento en Control Crónico</h4>
+                        </div>
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-earthMuted group-hover:text-darkAccent transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- REEL 7 -->
+                <div class="reel-card visitante avecindado" data-category="visitante">
+                    <div onclick="openOverlay(7)" class="p-4 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">Reel 07 • Bienestar</span>
+                            <h4 class="text-base font-semibold text-textPrimary">Sueros Terapéuticos & Hidratación</h4>
+                        </div>
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-earthMuted group-hover:text-darkAccent transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- REEL 8 -->
+                <div class="reel-card local avecindado visitante" data-category="local">
+                    <div onclick="openOverlay(8)" class="p-4 bg-creamSurface/90 hover:bg-white rounded-2xl border border-gray-200/70 transition-all cursor-pointer group flex items-center justify-between">
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">Reel 08 • Accesibilidad</span>
+                            <h4 class="text-base font-semibold text-textPrimary">Sin Citas: Tu Consultorio en Mazunte</h4>
+                        </div>
+                        <i data-lucide="chevron-right" class="w-5 h-5 text-earthMuted group-hover:text-darkAccent transition-colors"></i>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BTL & FIELD ACTIVATIONS SECTION -->
+        <section class="space-y-4 pt-2">
+            <div class="flex items-baseline justify-between px-1">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-sageGreen block">Estrategia Territorial</span>
+                    <h3 class="text-xl font-serif font-semibold text-textPrimary">
+                        Acciones BTL & Activación Local
+                    </h3>
+                </div>
+                <span class="px-3 py-1 bg-sageLight text-sageGreen text-xs font-bold rounded-full">
+                    Impacto Directo
+                </span>
+            </div>
+
+            <p class="text-sm text-textMuted leading-relaxed px-1">
+                Para complementar la estrategia digital y posicionar la renovada propuesta médica del Dr. Marco, implementaremos 4 pilares tácticos de penetración territorial:
+            </p>
+
+            <!-- BTL Card 1 -->
+            <div class="p-5 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-3">
+                <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
+                        <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">BTL 01 • Impacto Social Local</span>
+                        <h4 class="text-base font-serif font-bold text-textPrimary">Pláticas Gratuitas sobre Control de Diabetes</h4>
+                    </div>
+                </div>
+                <p class="text-sm text-textMuted leading-relaxed pl-13">
+                    Talleres comunitarios presenciales impartidos por el doctor. Al finalizar cada sesión, se entrega a todos los asistentes una <strong class="text-textPrimary font-semibold">hoja impresa con lineamientos prácticos para el control de diabetes en casa</strong> y ficha de seguimiento.
+                </p>
+                <div class="pl-13 pt-1 flex items-center text-xs text-sageGreen font-semibold gap-1.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 shrink-0"></i> Crea vínculo humano y genera primeras consultas de seguimiento.
+                </div>
+            </div>
+
+            <!-- BTL Card 2 -->
+            <div class="p-5 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-3">
+                <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
+                        <i data-lucide="map-pin" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">BTL 02 • Orientación Geográfica</span>
+                        <h4 class="text-base font-serif font-bold text-textPrimary">Señalización Bilingüe en Cruces Clave</h4>
+                    </div>
+                </div>
+                <p class="text-sm text-textMuted leading-relaxed pl-13">
+                    Instalación de señaléctica limpia, estética y clara en ubicaciones neurálgicas: <strong class="text-textPrimary font-semibold">Crucero San Agustinillo-Mazunte y la entrada a Rinconcito</strong>. Contenido en español e inglés con código QR de acceso directo en Google Maps.
+                </p>
+                <div class="pl-13 pt-1 flex items-center text-xs text-sageGreen font-semibold gap-1.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 shrink-0"></i> Captación visual continua de transeúntes y conductores.
+                </div>
+            </div>
+
+            <!-- BTL Card 3 -->
+            <div class="p-5 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-3">
+                <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
+                        <i data-lucide="waves" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">BTL 03 • Aliados en Playa</span>
+                        <h4 class="text-base font-serif font-bold text-textPrimary">Señalización & Alianza con Salvavidas</h4>
+                    </div>
+                </div>
+                <p class="text-sm text-textMuted leading-relaxed pl-13">
+                    Puntos informativos bilingües en torres de salvavidas enfocados en prevención de golpes por oleaje, cortaduras y golpes de calor. Se otorga un <strong class="text-textPrimary font-semibold">porcentaje de descuento especial en atención médica para todos los salvavidas</strong> de la zona.
+                </p>
+                <div class="pl-13 pt-1 flex items-center text-xs text-sageGreen font-semibold gap-1.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 shrink-0"></i> Convierte a los salvavidas en el primer canal de recomendación directa.
+                </div>
+            </div>
+
+            <!-- BTL Card 4 -->
+            <div class="p-5 bg-creamSurface rounded-3xl border border-gray-200/80 shadow-soft-editorial space-y-3">
+                <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-2xl bg-sageLight text-sageGreen flex items-center justify-center shrink-0">
+                        <i data-lucide="building-2" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <span class="text-xs font-bold text-earthMuted uppercase tracking-wider">BTL 04 • Red Hotelera & Turística</span>
+                        <h4 class="text-base font-serif font-bold text-textPrimary">Colaboración con Hoteles y Posadas</h4>
+                    </div>
+                </div>
+                <p class="text-sm text-textMuted leading-relaxed pl-13">
+                    Entrega de mini stands de escritorio elegantes para recepción junto con tarjetas de emergencia y flyers informativos. Se brinda un <strong class="text-textPrimary font-semibold">porcentaje de descuento para todos los trabajadores de los hoteles colaboradores</strong>.
+                </p>
+                <div class="pl-13 pt-1 flex items-center text-xs text-sageGreen font-semibold gap-1.5">
+                    <i data-lucide="check-circle-2" class="w-4 h-4 shrink-0"></i> Presencia fija en el punto de decisión de turistas y cuida al personal hotelero.
+                </div>
+            </div>
+
+            <!-- Agency Scope & Value Guarantee Card -->
+            <div class="p-6 rounded-3xl bg-darkAccent text-creamSurface space-y-3 shadow-soft-editorial">
+                <div class="flex items-center gap-2.5 text-sageLight">
+                    <i data-lucide="shield-check" class="w-6 h-6 shrink-0"></i>
+                    <h4 class="text-xs font-bold uppercase tracking-wider">Alcance de Gestión Agencia (Todo Incluido)</h4>
+                </div>
+                <p class="text-sm text-gray-300 leading-relaxed">
+                    Como agencia, asumimos <strong class="text-white font-semibold">toda la gestión de relaciones públicas, negociaciones, acuerdos, permisos municipales y diseño gráfico</strong> de todos los materiales dentro de la iguala mensual. 
+                </p>
+                <p class="text-xs text-gray-400 italic pt-2 border-t border-white/10">
+                    *El único costo extra corresponderá exclusivamente a la impresión o manufactura física con proveedores externos.
+                </p>
+            </div>
+        </section>
+
+        <!-- Medical Services Showcase Card -->
+        <section class="p-6 rounded-4xl bg-sageGreen text-creamSurface space-y-4 shadow-soft-editorial relative overflow-hidden">
+            <div class="space-y-1.5">
+                <span class="text-xs font-bold text-sageLight uppercase tracking-wider">Consultorio 2 • Mazunte</span>
+                <h3 class="text-xl font-serif font-medium text-white">Servicios de Atención Directa</h3>
+                <p class="text-xs text-sageLight/90 font-medium">Soluciones médicas completas sin necesidad de previa cita.</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3 pt-2 text-xs sm:text-sm">
+                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                    <i data-lucide="stethoscope" class="w-5 h-5 text-sageLight shrink-0"></i>
+                    <span class="text-white font-medium">Consultas Médicas</span>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                    <i data-lucide="activity" class="w-5 h-5 text-sageLight shrink-0"></i>
+                    <span class="text-white font-medium">Ultrasonidos</span>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                    <i data-lucide="scan" class="w-5 h-5 text-sageLight shrink-0"></i>
+                    <span class="text-white font-medium">Rayos X Portátiles</span>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                    <i data-lucide="test-tube-2" class="w-5 h-5 text-sageLight shrink-0"></i>
+                    <span class="text-white font-medium">Muestras Laboratorio</span>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                    <i data-lucide="heart-pulse" class="w-5 h-5 text-sageLight shrink-0"></i>
+                    <span class="text-white font-medium">Electrocardiogramas</span>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-white/10 border border-white/10 flex items-center gap-2.5">
+                    <i data-lucide="syringe" class="w-5 h-5 text-sageLight shrink-0"></i>
+                    <span class="text-white font-medium">Vacunación VPH</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Info -->
+        <footer class="text-center text-xs text-textMuted py-4 space-y-2">
+            <p class="font-serif italic text-sageGreen text-sm">Dr. Marco Antonio Pérez Elizarrarás</p>
+            <p class="text-xs leading-relaxed">
+                Consultorio Mazunte: Junto a la Agencia de Policía<br>
+                Sede Central: Calle Reforma 1, Col. Centro, San Pedro Pochutla
+            </p>
+        </footer>
+
+    </main>
+
+    <!-- OVERLAY SCRIPT MODAL (Clean Editorial Frame) -->
+    <div id="script-modal" class="fixed inset-0 z-50 hidden modal-overlay flex items-center justify-center p-3 sm:p-4 transition-all duration-300">
+        <div class="bg-creamSurface border border-white/80 w-full max-w-md rounded-4xl shadow-overlay overflow-hidden flex flex-col max-h-[90vh]">
+            
+            <!-- Modal Header -->
+            <div class="p-5 border-b border-gray-200/80 flex items-center justify-between bg-creamBg/70">
+                <div>
+                    <span id="modal-badge" class="px-3 py-1 bg-sageGreen text-creamSurface text-xs font-bold rounded-full uppercase tracking-wider">
+                        REEL 01
+                    </span>
+                    <p id="modal-target" class="text-xs text-earthMuted font-semibold mt-1">Comunidad Local</p>
+                </div>
+                <button onclick="closeOverlay()" class="w-10 h-10 rounded-full bg-creamBg text-textPrimary hover:bg-darkAccent hover:text-white flex items-center justify-center transition-colors">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="p-5 overflow-y-auto space-y-4 text-sm">
+                <div>
+                    <h3 id="modal-title" class="text-lg font-serif font-bold text-textPrimary leading-snug">
+                        Título del Reel
+                    </h3>
+                    <p id="modal-hook" class="text-sageGreen font-semibold mt-1 text-xs">
+                        Hook estratégico de entrada
+                    </p>
+                </div>
+
+                <!-- Timeline / Script Steps -->
+                <div class="space-y-3.5 pt-1" id="modal-script-steps">
+                    <!-- Dynamic steps injected via JS -->
+                </div>
+
+                <!-- Production Instructions -->
+                <div class="p-4 bg-creamBg rounded-2xl border border-gray-200/70 space-y-2 text-xs">
+                    <div class="font-bold text-textPrimary flex items-center gap-1.5 text-xs">
+                        <i data-lucide="clapperboard" class="w-4 h-4 text-sageGreen"></i> Guía de Grabación:
+                    </div>
+                    <p id="modal-note" class="text-textMuted leading-relaxed">
+                        Instrucciones del Dr. Marco sobre locación y encuadre.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Modal Footer -->
+            <div class="p-4 border-t border-gray-200/80 bg-creamBg/80 flex items-center justify-between text-xs">
+                <span class="text-earthMuted flex items-center gap-1 font-semibold">
+                    <i data-lucide="map-pin" class="w-3.5 h-3.5 text-sageGreen"></i> Mazunte (Agencia de Policía)
+                </span>
+                <button onclick="closeOverlay()" class="px-5 py-2.5 bg-darkAccent text-creamSurface font-semibold text-xs rounded-full hover:bg-darkAccentHover transition-colors shadow-sm">
+                    Cerrar Guión
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Data & Interactive Logic -->
+    <script>
+        const reelsData = {
+            1: {
+                badge: "REEL 01 • ESTRELLA LOCAL",
+                target: "Nativos y familias de Mazunte, San Agustinillo y Zipolite",
+                title: "¿Por qué viajar hasta Pochutla? Atención completa en Mazunte",
+                hook: "Objetivo: Evitar traslados largos para estudios rutinarios y consultas.",
+                note: "Actitud cercana, tono amable y vecinal. Grabar en la fachada del consultorio de Mazunte junto a la Agencia de Policía.",
+                steps: [
+                    { time: "0:00 - 0:03", audio: "Para cuidar de tu salud y la de tu familia ya no tienes que desplazarte lejos.", visual: "Toma cálida del Dr. Marco saludando en la entrada del consultorio en Mazunte." },
+                    { time: "0:03 - 0:08", audio: "En nuestro consultorio junto a la Agencia de Policía de Mazunte, encuentras atención médica directa, cálida y sin complicaciones.", visual: "Corte a consulta general: revisión de presión, escucha atenta al paciente." },
+                    { time: "0:08 - 0:15", audio: "Realizamos control de diabetes e hipertensión, seguimiento prenatal con ultrasonido y toma de muestras para laboratorio, todo sin salir de tu comunidad.", visual: "B-roll rápido de ultrasonido funcionando y toma de muestra de laboratorio." },
+                    { time: "0:15 - 0:20", audio: "No necesitas cita. Ven directamente cuando nos necesites. Tu salud en casa y en buenas manos.", visual: "Cierre con el Dr. Marco sonriendo. Overlay de texto: 'Consultorio Mazunte | Junto a Agencia de Policía'." }
+                ]
+            },
+            2: {
+                badge: "REEL 02 • ESTRELLA AVECINDADO",
+                target: "Residentes permanentes nacionales e internacionales",
+                title: "Medicina Preventiva & Diagnóstico Integral en la Costa",
+                hook: "Objetivo: Ofrecer certidumbre profesional, Rayos X y vacunación especializada.",
+                note: "Luz natural suave, encuadre limpio. Mostrar el equipo de Rayos X portátil y la vacuna VPH con altos estándares clínicos.",
+                steps: [
+                    { time: "0:00 - 0:03", audio: "Vivir en Mazunte es increíble, pero saber dónde atender tu salud con respaldo profesional da verdadera paz.", visual: "Dr. Marco revisando expedientes y equipo médico profesional en consultorio." },
+                    { time: "0:03 - 0:09", audio: "Ofrecemos medicina integral preventiva, chequeos completos, laboratorios y Rayos X digitales con equipo portátil de alta resolución.", visual: "Muestra del equipo portátil de Rayos X y toma de electrocardiograma." },
+                    { time: "0:09 - 0:15", audio: "Además, contamos con esquemas de vacunación especializada, como la vacuna contra el VPH, con la orientación clara y profesional que buscas.", visual: "Dr. Marco explicando detalladamente a paciente en tono empático e informado." },
+                    { time: "0:15 - 0:20", audio: "Te esperamos en el consultorio de Mazunte, justo al lado de la Agencia de Policía. Camina y atiéndete hoy mismo.", visual: "Texto final: 'Medicina Integral & Diagnóstico | Mazunte'." }
+                ]
+            },
+            3: {
+                badge: "REEL 03 • ESTRELLA TURISTA",
+                target: "Población flotante, mochileros y visitantes",
+                title: "Urgencias, Oleaje & Sueros Terapéuticos",
+                hook: "Objetivo: Respuesta inmediata ante percances en el mar y malestares digestivos.",
+                note: "Ritmo dinámico, ágil y tranquilizador. Transmitir solución inmediata para no perder vacaciones.",
+                steps: [
+                    { time: "0:00 - 0:03", audio: "El mar de la costa oaxaqueña es hermoso, pero a veces nos toma por sorpresa.", visual: "Dr. Marco dirigiéndose a la cámara con tono resolutivo y sereno." },
+                    { time: "0:03 - 0:08", audio: "Si sufriste un golpe por el oleaje, una cortadura o requieres valoración por traumatología o deshidratación, estamos para ayudarte.", visual: "B-roll de aplicación de suero y revisión de articulaciones o placas de Rayos X." },
+                    { time: "0:08 - 0:14", audio: "Contamos con atención de urgencias, Rayos X digitales al instante para descartar lesiones y sueros de recuperación rápida.", visual: "Toma del equipo de diagnóstico portátil en acción rápida." },
+                    { time: "0:14 - 0:20", audio: "Llega directamente al consultorio en Mazunte, junto a la Agencia de Policía. Sin citas, atención inmediata.", visual: "Cierre con ubicación en pantalla y teléfono 222 113 6211." }
+                ]
+            },
+            4: {
+                badge: "REEL 04 • DIAGNÓSTICO",
+                target: "Comunidad Local y Avecindada",
+                title: "Rayos X Digitales en Mazunte: Diagnóstico Instantáneo",
+                hook: "Objetivo: Destacar la tecnología diagnóstica portátil disponible en Mazunte.",
+                note: "Demostrar el equipo portátil en manos del doctor para mostrar portabilidad e innovación.",
+                steps: [
+                    { time: "0:00 - 0:04", audio: "¿Sabías que ya no necesitas viajar a otra ciudad para tomarte una radiografía?", visual: "Dr. Marco sosteniendo o mostrando el equipo de Rayos X portátil digital." },
+                    { time: "0:04 - 0:10", audio: "Contamos con equipo portátil de Rayos X digital directamente en nuestro consultorio de Mazunte para evaluar fracturas o tórax al instante.", visual: "Demostración del procesamiento digital de imagen radiológica." },
+                    { time: "0:10 - 0:15", audio: "Diagnósticos rápidos, precisos y humanos, justo al lado de la Agencia de Policía.", visual: "Doctor sonriendo e invitando a consultar." }
+                ]
+            },
+            5: {
+                badge: "REEL 05 • PREVENCIÓN",
+                target: "Avecindados y Jóvenes",
+                title: "Prevención Activa: Vacunación Especializada VPH",
+                hook: "Objetivo: Fomentar la inmunización preventiva en la zona.",
+                note: "Tono formal, empático, confidencial y respetuoso.",
+                steps: [
+                    { time: "0:00 - 0:04", audio: "La prevención es la herramienta más poderosa de la medicina moderna.", visual: "El Dr. Marco hablando en mesa de consulta, ambiente cálido e informado." },
+                    { time: "0:04 - 0:10", audio: "Contamos con la aplicación de la vacuna contra el VPH para hombres y mujeres. Un paso decisivo para proteger tu futuro.", visual: "Detalle del área de vacunación con altos estándares de higiene." },
+                    { time: "0:10 - 0:15", audio: "Acércate a platicar con nosotros en Mazunte. Resuelve todas tus dudas de forma confidencial.", visual: "Llamado a pasar directamente al consultorio." }
+                ]
+            },
+            6: {
+                badge: "REEL 06 • SALUD FAMILIAR",
+                target: "Comunidad Local / Familias",
+                title: "Control Dulce & Presión Estable: Acompañamiento a la Tercera Edad",
+                hook: "Objetivo: Humanizar el trato al adulto mayor y enfermedades crónicas.",
+                note: "Máxima calidez humana. Tomas del doctor interactuando con empatía y atención.",
+                steps: [
+                    { time: "0:00 - 0:04", audio: "El control de la presión y la glucosa no tiene por qué ser complicado ni frío.", visual: "Dr. Marco tomando la presión a un paciente adulto mayor con calidez." },
+                    { time: "0:04 - 0:10", audio: "Nos enfocamos en darte un seguimiento médico cercano, ajustando tus tratamientos de forma humana y comprensible.", visual: "El doctor explicando la receta y respondiendo dudas pacientemente." },
+                    { time: "0:10 - 0:15", audio: "Trae a tus familiares al consultorio de Mazunte. Cuidamos a quienes más quieres.", visual: "Gesto de despedida respetuoso y amigable." }
+                ]
+            },
+            7: {
+                badge: "REEL 07 • BIENESTAR",
+                target: "Turistas y Residentes Activos",
+                title: "Sueros Terapéuticos y Rehidratación Rápida",
+                hook: "Objetivo: Mostrar la recuperación intravenosa rápida por calor o deshidratación.",
+                note: "Espacio clínico limpio, reconfortante y seguro.",
+                steps: [
+                    { time: "0:00 - 0:04", audio: "¿Golpe de calor, deshidratación o desgaste físico intenso?", visual: "Primer plano del Dr. Marco preparando área de terapia de hidratación." },
+                    { time: "0:04 - 0:10", audio: "Evaluamos tu estado general y aplicamos terapia de sueros según tus necesidades específicas para que recuperes tu energía de forma segura.", visual: "Toma de confort en la atención clínica." },
+                    { time: "0:10 - 0:15", audio: "Visítanos en el consultorio de Mazunte, a un costado de la Agencia de Policía.", visual: "Cierre con logo e información de teléfono." }
+                ]
+            },
+            8: {
+                badge: "REEL 08 • ACCESIBILIDAD",
+                target: "Audiencia General",
+                title: "Sin Citas, Sin Demoras: Tu Consultorio en Mazunte",
+                hook: "Objetivo: Eliminar la barrera de agenda y fomentar el paso directo.",
+                note: "Toma ágil caminando de la Agencia de Policía hacia la puerta del consultorio.",
+                steps: [
+                    { time: "0:00 - 0:04", audio: "Cuando sientes un malestar, lo que menos quieres es esperar días por una cita médica.", visual: "Toma dinámica recorriendo el camino hacia el consultorio en Mazunte." },
+                    { time: "0:04 - 0:10", audio: "En nuestro consultorio en Mazunte te atendemos conforme vas llegando, con la calidad, tecnología y calidez que mereces.", visual: "Demostración fluida de servicios: ultrasonido, laboratorio y consulta." },
+                    { time: "0:10 - 0:15", audio: "Ubicación: Junto a la Agencia de Policía en Mazunte. Informes al 222 113 6211.", visual: "Cierre con toma frontal clara del consultorio." }
+                ]
+            }
+        };
+
+        function openOverlay(id) {
+            const data = reelsData[id];
+            if (!data) return;
+
+            document.getElementById('modal-badge').innerText = data.badge;
+            document.getElementById('modal-target').innerText = data.target;
+            document.getElementById('modal-title').innerText = data.title;
+            document.getElementById('modal-hook').innerText = data.hook;
+            document.getElementById('modal-note').innerText = data.note;
+
+            const stepsContainer = document.getElementById('modal-script-steps');
+            stepsContainer.innerHTML = '';
+
+            data.steps.forEach(step => {
+                const stepEl = document.createElement('div');
+                stepEl.className = 'p-3.5 rounded-2xl bg-creamBg border border-gray-200/80 space-y-1.5';
+                stepEl.innerHTML = `
+                    <div class="flex justify-between text-xs text-sageGreen font-bold">
+                        <span>⏱️ ${step.time}</span>
+                        <span class="text-earthMuted">Audio & Visual</span>
+                    </div>
+                    <p class="text-textPrimary font-semibold text-sm leading-snug">🗣️ "${step.audio}"</p>
+                    <p class="text-textMuted text-xs italic">🎬 ${step.visual}</p>
+                `;
+                stepsContainer.appendChild(stepEl);
+            });
+
+            document.getElementById('script-modal').classList.remove('hidden');
+        }
+
+        function closeOverlay() {
+            document.getElementById('script-modal').classList.add('hidden');
+        }
+
+        function filterReels(category) {
+            const cards = document.querySelectorAll('.reel-card');
+            const buttons = document.querySelectorAll('.tab-btn');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-darkAccent', 'text-creamSurface', 'font-semibold');
+                btn.classList.add('text-textMuted');
+            });
+
+            const activeBtn = document.getElementById(`btn-${category}`);
+            if (activeBtn) {
+                activeBtn.classList.add('bg-darkAccent', 'text-creamSurface', 'font-semibold');
+                activeBtn.classList.remove('text-textMuted');
+            }
+
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category.includes(category)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        lucide.createIcons();
+    </script>
+</body>
+</html>
